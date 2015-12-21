@@ -1,0 +1,29 @@
+{
+  "name": "better-blog",
+  "version": "1.0.0",
+  "description": "A better blog then the last one I made",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masakistewart/betterBlog.git"
+  },
+  "author": "Cairo Stewart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masakistewart/betterBlog/issues"
+  },
+  "homepage": "https://github.com/masakistewart/betterBlog#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "knex": "^0.9.0",
+    "locus": "^1.2.0",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
+    "pg": "^4.4.3"
+  }
+}

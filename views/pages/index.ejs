@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ../partials/head %>
+	<title></title>
+</head>
+<body>
+	<% include ../partials/header %>
+	<div class="container">
+		<% things.forEach(function(thing) { %>
+			<div class="jumbotron">
+				<div class="col-md-12 text-center">
+					<h2><%= thing.title %><small><% thing.created_at</small></h2>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<img class="img-circle" src="<%= thing.img %>">
+					</div>
+					<div class="col-md-8">
+						<p><%= thing.article %></p>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<a href="/blog/<%= thing.id %>/edit" class="btn btn-default">Edit</a>
+					<a href="/blog/<%= thing.id %>/delete">Delete</a>
+				</div>
+			</div>
+		<% }) %>
+	</div>
+	<% include ../partials/footer %>
+</body>
+</html>

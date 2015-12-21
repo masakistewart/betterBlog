@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ../partials/head %>
+	<title></title>
+</head>
+<body>
+	<% include ../partials/header %>
+	<div class="container">
+		<div class="jumbotron">
+			<form method="POST" action="/blog">
+				<legend>New Post</legend>
+				 	<label>Title</label>
+					<input type="text" class="form-control" name="title">
+				</div>
+				<div class="form-group">
+					<label>Article</label>
+					<textarea name="article" class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<label>KeyWords</label>
+					<input type="text" class="form-control" name="keywords">
+				</div>
+				<div class="form-group">
+					<label>Image Url</label>
+					<input type="text" class="form-control" name="img">
+				</div>
+				<button type="submit" class="form-control btn btn-success">Submit</button>
+			</form>
+		</div>
+	</div>
+	<% include ../partials/footer %>
+</body>
+</html>
